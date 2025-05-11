@@ -1,0 +1,139 @@
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: var(--default-margin-left);
+  margin-right: var(--default-margin-right);
+  margin-top: 21px;
+}
+
+.nav-logo {
+  width: 109px;
+  height: auto;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nav-content, 
+.side-nav-content {
+  font-family: var(--secondary-font, sans-serif);
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  color: var(--secondary-font-color);
+}
+
+.nav-content {
+  display: flex;
+  gap: 10px;
+}
+
+.side-nav-content  {
+  gap: 50px;
+}
+
+.nav-list,
+.side-nav-list {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 16.71px;
+  margin-right: 22.27px;
+}
+
+.side-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.nav-list a,
+.side-nav-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-content button,
+.side-nav-content button {
+  background-color: var(--primary-brand-color);
+  border: none;
+  border-radius: 2.78px;
+  color: #FFFFFF;
+  font-family: var(--secondary-font, sans-serif);
+  font-weight: 400;
+  font-size: var(--secondary-font-size);
+
+  padding-left: 22.27px;
+  padding-top: 9.74px;
+  padding-bottom: 9.75px;
+
+  cursor: pointer;
+}
+
+.side-nav-content button {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.nav-content button::after,
+.side-nav-content button::after {
+  margin-left: 5.57px;
+  content: "→";
+  padding-right: 12.68px;
+}
+
+.hamburger,
+.side-nav-content {
+  display: none;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close-button {
+  font-size: 40px;
+  align-self: flex-end;
+  margin-top: 5px;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .nav-content {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .side-nav-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    transition: right 0.3s ease;
+    background-color: var(--side-nav-color);
+    z-index: 1000;
+  }
+
+  #menu-toggle:checked ~ .side-nav-content {
+    right: 0;
+  }
+}
