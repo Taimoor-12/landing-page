@@ -24,10 +24,10 @@ nav {
 
 .nav-content, 
 .side-nav-content {
-  font-family: var(--secondary-font, sans-serif);
+  font-family: var(--primary-font, sans-serif);
   font-weight: 500;
-  font-size: var(--secondary-font-size);
-  color: var(--secondary-font-color);
+  font-size: var(--primary-font-size);
+  color: var(--primary-font-color);
 }
 
 .nav-content {
@@ -71,9 +71,9 @@ nav {
   border: none;
   border-radius: 2.78px;
   color: #FFFFFF;
-  font-family: var(--secondary-font, sans-serif);
+  font-family: var(--primary-font, sans-serif);
   font-weight: 400;
-  font-size: var(--secondary-font-size);
+  font-size: var(--primary-font-size);
 
   padding-left: 22.27px;
   padding-top: 9.74px;
