@@ -106,6 +106,16 @@
   cursor: pointer;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (max-width: 900px) {
   .nav-container {
     margin-left: 80px;
@@ -129,10 +139,13 @@
     height: 100vh;
     transition: right 0.3s ease;
     background-color: var(--side-nav-color);
-    z-index: 1000;
   }
 
   #menu-toggle:checked ~ .side-nav-content {
     right: 0;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
   }
 }
