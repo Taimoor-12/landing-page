@@ -8,7 +8,7 @@ nav {
   align-items: center;
   margin-left: var(--default-margin-left);
   margin-right: var(--default-margin-right);
-  padding: 21px;
+  padding-top: 21px;
 }
 
 .nav-logo {
@@ -123,10 +123,6 @@ nav {
 }
 
 @media only screen and (max-width: 900px) {
-  .nav-container {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
   .nav-content {
     display: none;
   }
@@ -153,5 +149,19 @@ nav {
 
   #menu-toggle:checked ~ .overlay {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 831px) {
+  .nav-container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .nav-container {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
