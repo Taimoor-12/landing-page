@@ -165,3 +165,10 @@ nav {
     margin-right: 30px;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .nav-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
