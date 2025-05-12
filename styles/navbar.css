@@ -56,6 +56,7 @@ nav {
   flex-direction: column;
   gap: 30px;
   font-size: 15px;
+  margin-left: 32px;
 }
 
 .nav-list a,
@@ -90,7 +91,7 @@ nav {
 .side-nav-content button::after {
   margin-left: 5.57px;
   content: "→";
-  padding-right: 12.68px;
+  padding-right: 18px;
 }
 
 .hamburger,
