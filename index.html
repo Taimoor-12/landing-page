@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexcent</title>
-  <link rel="stylesheet" href="styles/variables.css">
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="nav-container">
-    <div class="nav-logo">
-      <img src="./assets/Logo.png" alt="logo">
-    </div>
-      
-    <!-- Hidden checkbox -->
-    <input type="checkbox" id="menu-toggle" hidden>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexcent</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/hero-section.css" />
+    <link rel="stylesheet" href="styles/our-clients-section.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./assets/main-logo.png" alt="main-logo" />
+        </div>
 
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle" hidden />
 
-    <div class="nav-content">
-      <ul class="nav-list">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Features</li></a>
-        <a href="#"><li>Community</li></a>
-        <a href="#"><li>Blog</li></a>
-        <a href="#"><li>Pricing</li></a>
-      </ul>
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-      <button type="button">Register Now</button>
-    </div>
+        <div class="nav-content">
+          <ul class="nav-list">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Features</li></a>
+            <a href="#"><li>Community</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Pricing</li></a>
+          </ul>
 
+          <button type="button">Register Now</button>
+        </div>
 
-    <label for="menu-toggle" class="overlay"></label>    
-    <div class="side-nav-content">
-      <label for="menu-toggle" class="close-button">&times;</label>
-      <ul class="side-nav-list">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Features</li></a>
-        <a href="#"><li>Community</li></a>
-        <a href="#"><li>Blog</li></a>
-        <a href="#"><li>Pricing</li></a>
-      </ul>
+        <label for="menu-toggle" class="overlay"></label>
+        <div class="side-nav-content">
+          <label for="menu-toggle" class="close-button">&times;</label>
+          <ul class="side-nav-list">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Features</li></a>
+            <a href="#"><li>Community</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Pricing</li></a>
+          </ul>
 
-      <button type="button">Register Now</button>
-    </div>
-  </nav>
-</body>
+          <button type="button">Register Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero-section">
+        <div class="hero-main-section">
+          <div class="cta">
+            <h1>Lessons and Insights <br /><span>from 8 years</span></h1>
+            <p>
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+            <button>Register</button>
+          </div>
+          <img src="assets/Illustration.svg" alt="hero-image" />
+        </div>
+      </section>
+
+      <section id="clients-section">
+        <div class="clients-text-div">
+          <h2>Our Clients</h2>
+          <p>We have been working with some Fortune 500+ clients</p>
+        </div>
+        <div class="clients-logos-div">
+          <img src="assets/Logo.svg" alt="logo" />
+          <img src="assets/Logo (1).svg" alt="logo-1" />
+          <img src="assets/Logo (2).svg" alt="logo-2" />
+          <img src="assets/Logo (3).svg" alt="logo-3" />
+          <img src="assets/Logo (4).svg" alt="logo-4" />
+          <img src="assets/Logo (5).svg" alt="logo-5" />
+          <img src="assets/Logo (6).svg" alt="logo-6" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
