@@ -1,0 +1,36 @@
+.image-with-text-section {
+  margin-top: 26.33px;
+  margin-right: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 34.11px;
+}
+
+.image-with-text-section img {
+  width: 40%;
+}
+
+.image-with-text-section .iwt-cta {
+  width: 60%;
+}
+
+@media only screen and (max-width: 767px) {
+  .image-with-text-section {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .image-with-text-section img {
+    width: 40%;
+  }
+
+  .iwt-cta {
+    width: 100%;
+  }
+
+  .iwt-cta h2 {
+    font-size: 20px;
+  }
+}
