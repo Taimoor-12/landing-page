@@ -1,0 +1,131 @@
+#testimonial-section {
+  background-color: var(--primary-background-color);
+  margin-top: 33.41px;
+}
+
+.testimonial-wrapper {
+  padding-top: 22.27px;
+  padding-bottom: 22.27px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+  display: flex;
+  gap: 54.29px;
+}
+
+.testimonial-text-div {
+  font-family: var(--primary-font, sans-serif);
+}
+
+.testimonial-text-div p:first-child {
+  color: #717171;
+  line-height: 24px;
+  font-size: var(--primary-font-size);
+}
+
+.testimonial-text-div p:nth-child(2) {
+  margin-top: 11.14px;
+}
+
+.testimonial-text-div p:nth-child(2),
+.testimonial-text-div button {
+  color: var(--primary-brand-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.testimonial-text-div p:nth-child(3) {
+  color: #717171;
+  font-size: var(--primary-font-size);
+  margin-top: 5.57px;
+}
+
+.logos-btn-wrapper {
+  margin-top: 22.27px;
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  column-gap: 80px;
+}
+
+.testimonial-logos-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-text-div button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  justify-self: flex-end;
+}
+
+.testimonial-text-div button::after {
+  margin-left: 5.57px;
+  content: "→";
+}
+
+@media only screen and (max-width: 1060px) {
+  .testimonial-text-div button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .logos-btn-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .testimonial-text-div button {
+    margin-top: 8px;
+    font-size: var(--primary-font-size);
+  }
+}
+
+
+@media only screen and (max-width: 708px) {
+  .testimonial-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial-img,
+  .testimonial-text-div {
+    text-align: center;
+  }
+
+  .testimonial-img img {
+    width: 40%;
+    min-width: 150px;
+  }
+  
+  .testimonial-text-div p:first-child {
+    font-size: 12px;
+  }
+
+  .logos-btn-wrapper {
+    row-gap: 20px;
+  }
+
+  .testimonial-text-div button {
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+  .testimonial-text-div p:first-child {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 371px) {
+  .testimonial-logos-div {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
