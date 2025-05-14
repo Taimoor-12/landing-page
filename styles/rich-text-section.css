@@ -13,7 +13,7 @@
 
 .rich-text-wrapper h2 {
   font-size: clamp(1.5rem, 1.2012rem + 1.7073vw, 3.25rem);
-  color: #263238;
+  color: var(--secondary-brand-color);
 }
 
 .rich-text-wrapper button {
