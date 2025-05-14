@@ -141,6 +141,7 @@ nav {
     height: 100vh;
     transition: right 0.3s ease;
     background-color: var(--primary-background-color);
+    z-index: 2;
   }
 
   #menu-toggle:checked ~ .side-nav-content {
@@ -149,6 +150,7 @@ nav {
 
   #menu-toggle:checked ~ .overlay {
     display: block;
+    z-index: 1;
   }
 }
 
