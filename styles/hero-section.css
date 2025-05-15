@@ -29,8 +29,8 @@
 }
 
 .cta h1 {
-  font-size: 44.55px;
-  line-height: 52.9px;
+  font-size: clamp(1.125rem, 0.7622rem + 2.0732vw, 3.25rem);
+  line-height: clamp(1.375rem, 0.9695rem + 2.3171vw, 3.75rem);
   color: var(--primary-font-color);
 }
 
@@ -39,7 +39,7 @@
 }
 
 .cta p {
-  font-size: var(--primary-font-size);
+  font-size: clamp(0.625rem, 0.561rem + 0.3659vw, 1rem);
   line-height: 16.7px;
   font-weight: 400;
   color: #717171;
@@ -53,7 +53,7 @@
   border-radius: 2.78px;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: var(--primary-font-size);
+  font-size: clamp(0.625rem, 0.561rem + 0.3659vw, 1rem);
 
   padding-left: 22.27px;
   padding-right: 22.27px;
@@ -83,40 +83,10 @@
   }
 }
 
-@media only screen and (max-width: 1087px) {
-  .cta h1 {
-    font-size: 36px;
-    line-height: 35px;
-  }
-
-  .cta p {
-    font-size: 11.16px;
-  }
-}
-
-@media only screen and (max-width: 932px) {
-  .cta h1 {
-    font-size: 32px;
-    line-height: 35px;
-  }
-
-}
-
-@media only screen and (max-width: 872px) {
-  .cta h1 {
-    font-size: 28px;
-  }
-
-}
-
 @media only screen and (max-width: 831px) {
   .hero-main-section {
     flex-direction: column-reverse;
     text-align: center;
-  }
-
-  .cta h1 {
-    font-size: 32px;
   }
 
   .hero-main-section img {
@@ -126,27 +96,8 @@
 }
 
 @media only screen and (max-width: 524px) {
-  .cta h1 {
-    font-size: 24px;
-  }
-
-}
-
-@media only screen and (max-width: 524px) {
   .hero-main-section img {
     display: none;
-  }
-
-}
-
-@media only screen and (max-width: 320px) {
-  .cta h1 {
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  .cta p {
-    font-size: 10px;
   }
 
 }
