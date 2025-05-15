@@ -1,0 +1,141 @@
+footer {
+  background-color: var(--secondary-brand-color);
+}
+
+.footer-container {
+  padding: 60px;
+  font-family: var(--primary-font, sans-serif);
+
+  display: grid;
+  grid-template-areas:
+    "info company support email";
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+
+  color: #F5F7FA;
+}
+
+.footer-info-wrapper {
+  grid-area: info;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-info-wrapper > img {
+  width: 40%;
+  min-width: 150px;
+}
+
+.social-logos-div {
+  display: flex;
+  gap: 14px;
+}
+
+.company-info-wrapper {
+  grid-area: company;
+}
+
+.support-info-wrapper {
+  grid-area: support;
+}
+
+.email-wrapper {
+  grid-area: email;
+}
+
+.footer-heading {
+  margin-bottom: 8px;
+}
+
+.company-info-div,
+.support-info-div {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  font-size: 10px;
+}
+
+.company-info-div a,
+.support-info-div a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.email-input-wrapper {
+  position: relative;
+  margin-top: 32px;
+  width: 90%;
+}
+
+.email-input-wrapper > input {
+  width: 100%;
+  background-color: #434e5c;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 12px;
+  color: inherit;
+}
+
+.email-input-wrapper > input::placeholder {
+  color: #D9DBE1;
+}
+
+
+.email-input-wrapper > img {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+
+@media only screen and (max-width: 1184px) {
+  .footer-container {
+    grid-template-areas:
+      "info info info"
+      "company support email";
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+  }
+
+  .footer-info-wrapper {
+    gap: 30px;
+  }
+
+  .footer-info-wrapper > img {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .footer-container {
+    grid-template-areas:
+      "info info"
+      "company support"
+      "email email";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .email-input-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer-container {
+    grid-template-areas:
+      "info"
+      "company"
+      "support"
+      "email";
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    row-gap: 30px;
+  }
+
+  .email-input-wrapper {
+    width: 80%;
+  }
+}
