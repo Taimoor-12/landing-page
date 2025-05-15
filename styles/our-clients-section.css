@@ -25,6 +25,11 @@
   line-height: 16.7px;
 }
 
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
 .clients-logos-div {
   padding-top: 17.4px;
   padding-bottom: 17.4px;
@@ -32,8 +37,29 @@
   padding-right: var(--default-margin-right);
 
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  gap: clamp(1.25rem, 0.1829rem + 6.0976vw, 7.5rem);
+
+
+  width: max-content;
+
+  animation-name: scroll;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.clients-logos-div img {
+  transition: transform 0.3s ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media only screen and (max-width: 831px) {
