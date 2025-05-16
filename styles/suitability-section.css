@@ -9,7 +9,7 @@
 
 .suitability-text-div h2 {
   color: var(--primary-font-color);
-  line-height: 30.6px;
+  font-size: clamp(1.375rem, 1.2683rem + 0.6098vw, 2rem);
 }
 
 .suitability-text-div p {

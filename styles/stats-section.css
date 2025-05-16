@@ -20,8 +20,7 @@
 }
 
 .stats-text-div h2 {
-  font-size: 42px;
-  line-height: 45.6px;
+  font-size: clamp(1.125rem, 0.8049rem + 1.8293vw, 3rem);
 }
 
 .stats-text-div h2 span {
@@ -30,8 +29,7 @@
 
 .stats-text-div p {
   color: #18191F;
-  font-size: var(--primary-font-size);
-  line-height: 16.7px;
+  font-size: clamp(0.625rem, 0.561rem + 0.3659vw, 1rem);
   
   margin-top: 5.57px;
 }
@@ -40,7 +38,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 60px;
+  column-gap: clamp(1.875rem, 1.6616rem + 1.2195vw, 3.125rem);
   row-gap: 40px;
 
   width: 40%;
@@ -52,13 +50,12 @@
 }
 
 .stats-div img {
-  width: 50px;
+  width: clamp(2.1875rem, 2.0274rem + 0.9146vw, 3.125rem);
 }
 
 .stats-div div span {
   font-weight: bold;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: clamp(1rem, 0.8293rem + 0.9756vw, 2rem);
   color: var(--primary-font-color);
 }
 
@@ -69,25 +66,9 @@
 }
 
 @media only screen and (max-width: 1128px) {
-  .stats-section-wrapper {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  .stats-text-div h2 {
-    font-size: 32px;
-  }
-
-  .stats-text-div p {
-    font-size: 11.14px;
-  }
-
   .stats-wrapper {
     column-gap: 40px;
     row-gap: 20px;
-  }
-
-  .stats-div div span {
-    font-size: 24px;
   }
 
   .stats-div div p {
@@ -125,8 +106,7 @@
 
 @media only screen and (max-width: 537px) {
   .stats-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(137px, 1fr));
     row-gap: 30px;
   }
 
@@ -137,39 +117,4 @@
   .stats-wrapper .stats-div:last-child {
     margin-left: 18px;
   }
-}
-
-@media only screen and (max-width: 477px) {
-  .stats-text-div h2 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .stats-text-div p {
-    font-size: 10px;
-  }
-
-  .stats-div img {
-    width: 30px;
-  }
-
-  .stats-div div span {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .stats-text-div h2 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .stats-div div span {
-    font-size: 18px;
-  }
-
-  .stats-div div p {
-    font-size: 10px;
-  }
-
 }
